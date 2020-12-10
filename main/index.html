@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--
+    HTML RULES:
+    HTML documents HTML5 <!doctype html>
+    Code omits type attributes for style sheets and scripts.
+    [Optional] Code does not use entity references unless necessary e.g. characters with special meaning (like < and &) as well as control or “invisible” characters (like no-break spaces).
+-->
+<!--
+    CSS RULES:
+    The code does not have trailing white spaces.
+    Indentation is consistent (either all tabs or all 2 spaces or all 4 spaces etc).
+    Code indents all content, that is rules within rules as well as declarations to reflect hierarchy and improve understanding.
+    The code uses a semicolon after every declaration for consistency and extensibility reasons.
+    Code always uses a space after a property name's colon, but no space between property and colon, for consistency reasons.
+    Code always uses a single space between the last selector and the opening brace that begins the declaration block. Code always start a new line for each selector and declaration.
+    Code always put a blank line (two line breaks) between rules.
+    Code uses consistent quotation marks for attribute selectors or property values (single vs. double).
+-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main/css/main.css">
     <title>My Blog Site</title>
 </head>
 
 <body>
+    <header>
+        <!-- Logo and Navbar. Logo far left rest of nav far right on desktop. On mobile only Logo and sign up-->
+        <nav class="nav-bar">
+            <a href="index.html">
+                <img class="logo" src="" alt="Logo design">
+            </a>
+            <ul>
+                <li><a class="nav-link"href="index.html">Home</a></li>
+                <li><a class="nav-link"href="post.html">Post</a></li>
+                <li><a class="nav-link"href="#contact">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--
+            Here goes the blog post cards with IMG and BUTTON, basic layout of the site. 4 Blog post cards would look decent. Picture on top then a short intro. Read button. All in a rectangular shape.
+        -->
+        <h1>My Blog</h1>
 
+    </main>
+    <footer>
+        <!--
+            Social media, newsletter sub button... Standard footer.
+        -->
+    </footer>
 </body>
 
 </html>
