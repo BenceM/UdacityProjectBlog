@@ -1,55 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-    HTML RULES:
-    HTML documents HTML5 <!doctype html>
-    Code omits type attributes for style sheets and scripts.
-    [Optional] Code does not use entity references unless necessary e.g. characters with special meaning (like < and &) as well as control or “invisible” characters (like no-break spaces).
--->
-<!--
-    CSS RULES:
-    The code does not have trailing white spaces.
-    Indentation is consistent (either all tabs or all 2 spaces or all 4 spaces etc).
-    Code indents all content, that is rules within rules as well as declarations to reflect hierarchy and improve understanding.
-    The code uses a semicolon after every declaration for consistency and extensibility reasons.
-    Code always uses a space after a property name's colon, but no space between property and colon, for consistency reasons.
-    Code always uses a single space between the last selector and the opening brace that begins the declaration block. Code always start a new line for each selector and declaration.
-    Code always put a blank line (two line breaks) between rules.
-    Code uses consistent quotation marks for attribute selectors or property values (single vs. double).
--->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/main/css/main.css">
+    <script src="https://kit.fontawesome.com/2971efed45.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>My Blog Site</title>
 </head>
 
 <body>
+
     <header>
-        <!-- Logo and Navbar. Logo far left rest of nav far right on desktop. On mobile only Logo and sign up-->
+
+        <!-- Logo and Navbar.-->
+
         <nav class="nav-bar">
-            <a href="index.html">
-                <img class="logo" src="" alt="Logo design">
-            </a>
-            <ul>
-                <li><a class="nav-link"href="index.html">Home</a></li>
-                <li><a class="nav-link"href="post.html">Post</a></li>
-                <li><a class="nav-link"href="#contact">Sign Up</a></li>
-            </ul>
+            <div class="logo">
+                <a class="icon" href ="index.html">
+                    <i id="faicon"class="fas fa-anchor fa-2x"></i>
+                    <h3>Blog</h3>
+                </a>
+            </div>
+            <div class="menu">
+                <div class="sidebar-right">
+                    <input class="search" type="text" placeholder="Search">
+                    <button class="sml-btn" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+                <ul class="sidebar-left">
+                    <li><a class="nav-link"href="index.html">Home</a></li>
+                    <li><a class="nav-link"href="post.html">Blog</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main>
-        <!--
-            Here goes the blog post cards with IMG and BUTTON, basic layout of the site. 4 Blog post cards would look decent. Picture on top then a short intro. Read button. All in a rectangular shape.
-        -->
-        <h1>My Blog</h1>
 
+    <main>
+
+        <!--Main Page front-->
+
+        <section class="hero">
+            <div class="hero-container">
+                <div class="content">
+                    <h1>My Summer Blog</h1>
+                    <p>Lorem ipsum dolor sit</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Blog posts-->
+
+        <div class="grid-main">
+            <section class="posts">
+                <div class="articles">
+
+                    <a href="post.html">
+                        <div class="post-1">
+                            <h2>Sailing Around The Mediterranean: <h3>Positano</h3></h2>
+                            <figure>
+                                <img class="post-imgs"src="../main/img/1200px-Positano_-_01.jpg" alt="Scenery of Positano">
+                                <figcaption><i>Positano, 2019</i></figcaption>
+                            </figure>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, perspiciatis saepe. Excepturi dicta nemo eius?</p>
+                            <button class="read-btn" type="button">Read More</button>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="articles">
+                    <a href="post.html">
+                        <div class="post-2">
+                            <h2>Portofino</h2>
+                            <figure>
+                                <img class="post-imgs"src="../main/img/portofino.jpg" alt="Scenery of Portofino">
+                                <figcaption><i>Portofino, 2018</i></figcaption>
+                            </figure>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, perspiciatis saepe. Excepturi dicta nemo eius?</p>
+                            <button class="read-btn" type="button">Read More</button>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="articles">
+                    <a href="post.html">
+                        <div class="post-3">
+                            <h2>Ireland</h2>
+                            <figure>
+                                <img class="post-imgs"src="../main/img/giantcause.jpg" alt="Scenery of the Giant Causeway">
+                                <figcaption><i>Portofino, 2018</i></figcaption>
+                            </figure>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, perspiciatis saepe. Excepturi dicta nemo eius?</p>
+                            <button class="read-btn" type="button">Read More</button>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="articles">
+                        <div class="post-4">
+                            <a href="post.html">
+                                <h2>Palermo</h2>
+                                <figure>
+                                    <img class="post-imgs" src="../main/img/1200px-Cattedrale_Palermo_lato_Ovest.jpg" alt="Palermo Cathedral">
+                                    <figcaption><i>Palermo, 2020</i></figcaption>
+                                </figure>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, perspiciatis saepe. Excepturi dicta nemo eius?</p>
+                            <button class="read-btn" type="button">Read More</button>
+                        </div>
+
+                </div>
+
+            </section>
+
+            <!--Bio and signup-->
+
+            <section class="infobar">
+                <div class="bio">
+                    <h3><u>About Me</u></h3>
+                    <div class="flex-container">
+                        <img class="author-img" src="../main/img/128684171_832487250868466_1050679546985747745_n.jpg" alt="Profile shot of the author of the blog">
+                        <p>Lorem ipsum dolor sit amet conse ctetur, adipisicing elit. Deserunt quia dolore quasi? Eligendi, <b>error</b> vel autem repellat voluptas <i>illum</i> quidem?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="sign-up">
+                    <h4>Subscribe To Our Newsletter</h4>
+                    <input type="email" class="email" placeholder="email@mail.com">
+                    <button type="submit">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </section>
+        </div>
     </main>
+
     <footer>
-        <!--
-            Social media, newsletter sub button... Standard footer.
-        -->
+
+         <!--Footer: socials, email sub, others-->
+
+        <div class="social"></div>
+            <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.twitch.tv/" target="blank"><i class="fab fa-twitch"></i></a>
+        </div>
+        <div class="alt-search">
+            <input class="search-big" type="text" placeholder="Search">
+            <button class="sml-btn" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <p>Blog By Bence</p>
     </footer>
+
+    <!--Put the script into a .js-->
+
+    <script>
+        var mywindow = $(window);
+        var mypos = mywindow.scrollTop();
+        var up = false;
+        var newscroll;
+        mywindow.scroll(function () {
+            newscroll = mywindow.scrollTop();
+            if (newscroll > mypos && !up) {
+                $('.nav-bar').stop().fadeOut();
+                up = !up;
+                console.log(up);
+            } else if(newscroll < mypos && up) {
+                $('.nav-bar').stop().fadeIn();
+                up = !up;
+            }
+            mypos = newscroll;
+        });
+    </script>
 </body>
 
 </html>

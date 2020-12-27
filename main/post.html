@@ -4,12 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/main/css/main.css">
+    <script src="https://kit.fontawesome.com/2971efed45.js" crossorigin="anonymous"></script>
     <title>My Blog Site</title>
 </head>
 <body>
+    <script>
+        var window = $(window);
+        var pos = window.scrollTop();
+        var up = false;
+        var newscroll;
+        window.scroll(function () {
+            newscroll = window.scrollTop();
+            if (newscroll > pos && !up) {
+                $('.nav-bar').stop().fadeOut();
+                up = !up;
+                console.log(up);
+            } else if(newscroll < pos && up) {
+                $('.nav-bar').stop().fadeIn();
+                up = !up;
+            }
+            pos = newscroll;
+        });
+    </script>
+
     <header>
+        <!-- Logo and Navbar.-->
         <nav class="nav-bar">
-            <a href="index.html">Home</a>
+            <div class="logo">
+                <a class="icon" href ="index.html">
+                    <i id="faicon"class="fas fa-anchor"></i>
+                </a>
+            </div>
+            <div class="menu">
+                <div class="sidebar-right">
+                    <input class="search" type="text" placeholder="Look it up">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+                <ul class="sidebar-left">
+                    <li><a class="nav-link"href="index.html">Home</a></li>
+                    <li><a class="nav-link"href="post.html">Blog</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 </body>
