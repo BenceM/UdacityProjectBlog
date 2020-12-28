@@ -1,0 +1,40 @@
+.post-grid{
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 1rem;
+    padding-top: 7em;
+}
+.article-post{
+    margin: 1.5em;
+}
+.article-end{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 2px solid var(--small-border-color);
+    margin-top: 0.7em;
+}
+.grid-left-post{
+    align-self: center;
+    justify-self: start;
+    padding: 0.5em 0 0 0.5em;
+}
+.grid-right-post{
+    align-self: center;
+    justify-self: end;
+    padding: 0.5em 0.5em 0 0;
+}
+.interact-link{
+    padding: 0.5em;
+}
+
+@media (min-width:768px){
+    .post-grid{
+        grid-template-columns: 3fr 1fr;
+        gap: 3rem;
+        margin: 0 3em 2em 5em;
+    }
+    .bio-post{
+        margin-left: 0.5em;
+    }
+}

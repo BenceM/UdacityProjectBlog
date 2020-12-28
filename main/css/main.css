@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import "post.css";
         /*------General rules------*/
 :root{
     --primary-color: #fff;
     --secondary-color: #337;
+    --small-border-color: rgb(235, 235, 235);
     /*ADD COLOR SCHEME*/
     /*LINK HOVER COLOR*/
 }
@@ -48,6 +50,7 @@ li{
     background-color: var(--primary-color);
     position: fixed;
     z-index: 1;
+    border-bottom: 2px solid var(--small-border-color);
 }
 
 .menu{
@@ -78,6 +81,7 @@ li{
 .sml-btn{
     padding: 0.1rem;
     border: medium thin;
+    cursor: pointer;
 }
     /*------Hero background------*/
 main{
@@ -173,12 +177,15 @@ h2 span{
     width: 100%;
     border-radius: 20px;
     line-height: 0;
-    margin-top: 1rem;
+}
+.submit-btn{
+    cursor: pointer;
 }
     /*------Footer------*/
 footer{
-    margin:1em 0.5em;
-    padding: 0 1em;
+    margin:1em 0;
+    padding: 0.5em 2em;
+    border-top: 2px solid rgb(196, 191, 191);
 }
 
 .facebook-link:hover{
@@ -192,7 +199,6 @@ footer{
 .twitch-link:hover{
     color:#9147ff;
 }
-
 @media (min-width:570px){
 
     h1{
@@ -203,9 +209,8 @@ footer{
 @media (min-width:768px){
 
     .grid-main{
-        display: grid;
         grid-template-columns: 2fr 1fr;
-        gap: 2rem;
+        gap: 3rem;
         margin: 5em 5em 2em 5em;
     }
 
