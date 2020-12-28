@@ -2,7 +2,9 @@
         /*------General rules------*/
 :root{
     --primary-color: #fff;
+    --secondary-color: #337;
     /*ADD COLOR SCHEME*/
+    /*LINK HOVER COLOR*/
 }
 
 *{
@@ -35,7 +37,7 @@ li{
     display: flex;
     height: auto;
     width:100%;
-    color: #337;
+    color: var(--secondary-color);
 }
 
 .nav-bar{
@@ -67,6 +69,10 @@ li{
 
 .nav-link{
     padding: 0 1rem;
+    font-size: 110%;
+}
+.nav-link:hover{
+    color: var(--secondary-color);
 }
 
 .sml-btn{
@@ -125,12 +131,6 @@ h1{
 .bio h3{
     margin-bottom: 1.5em;
 }
-.posts{
-
-}
-.articles{
-    /*margin: 7em 15em 0 15em;*/
-}
 
 h2{
     text-align: center;
@@ -144,12 +144,14 @@ h2 span{
     width:100%;
     display: block;
 }
+
 .flex-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .flex-container p{
     text-align:start;
 }
@@ -177,6 +179,18 @@ h2 span{
 footer{
     margin:1em 0.5em;
     padding: 0 1em;
+}
+
+.facebook-link:hover{
+    color: #385898;
+}
+
+.youtube-link:hover{
+    color:#c00;
+}
+
+.twitch-link:hover{
+    color:#9147ff;
 }
 
 @media (min-width:570px){
@@ -209,6 +223,4 @@ footer{
         background-color: #fff;
         padding: 0 1em 0 1em;
     }
-
-
 }
