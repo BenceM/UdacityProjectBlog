@@ -56,7 +56,7 @@
             <section class="posts">
                 <div class="articles">
                     <div class="post-1">
-                        <a href="post.html"></a>
+                        <a href="post.html">
                             <h2>Positano</h2>
                             <figure>
                                 <img class="post-imgs"src="../main/img/1200px-Positano_-_01.jpg" alt="Scenery of Positano">
@@ -72,29 +72,31 @@
                 <div class="articles">
                     <a href="post.html">
                         <div class="post-2">
+                            <a href="post.html">
                             <h2>Portofino</h2>
-                            <figure>
-                                <img class="post-imgs"src="../main/img/portofino.jpg" alt="Scenery of Portofino">
-                                <figcaption><i>Portofino, 2018</i></figcaption>
-                            </figure>
+                                <figure>
+                                    <img class="post-imgs"src="../main/img/portofino.jpg" alt="Scenery of Portofino">
+                                    <figcaption><i>Portofino, 2018</i></figcaption>
+                                </figure>
+                            </a>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, perspiciatis saepe. Excepturi dicta nemo eius?</p>
-                            <button class="read-btn" type="button">Read More</button>
+                            <a href="post.html" class="nav-btn">Read More</a>
                         </div>
                     </a>
                 </div>
 
                 <div class="articles">
-                    <a href="post.html">
                         <div class="post-3">
-                            <h2>Ireland</h2>
-                            <figure>
-                                <img class="post-imgs"src="../main/img/giantcause.jpg" alt="Scenery of the Giant Causeway">
-                                <figcaption><i>Portofino, 2018</i></figcaption>
-                            </figure>
+                            <a href="post.html">
+                                <h2>Ireland</h2>
+                                <figure>
+                                    <img class="post-imgs"src="../main/img/giantcause.jpg" alt="Scenery of the Giant Causeway">
+                                    <figcaption><i>Portofino, 2018</i></figcaption>
+                                </figure>
+                            </a>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, perspiciatis saepe. Excepturi dicta nemo eius?</p>
-                            <button class="read-btn" type="button">Read More</button>
+                            <a href="post.html" class="nav-btn">Read More</a>
                         </div>
-                    </a>
                 </div>
 
                 <div class="articles">
@@ -107,7 +109,7 @@
                                 </figure>
                             </a>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, perspiciatis saepe. Excepturi dicta nemo eius?</p>
-                            <button class="read-btn" type="button">Read More</button>
+                            <a href="post.html" class="nav-btn">Read More</a>
                         </div>
 
                 </div>
@@ -120,7 +122,13 @@
                 <div class="bio">
                     <h3><u>About Me</u></h3>
                     <div class="flex-container">
-                        <img class="author-img" src="../main/img/128684171_832487250868466_1050679546985747745_n.jpg" alt="Profile shot of the author of the blog">
+                        <div class="subflex-container">
+                            <img class="author-img" src="../main/img/128684171_832487250868466_1050679546985747745_n.jpg" alt="Profile shot of the author of the blog">
+                            <div class="headers">
+                                <h4>Bence Meszaros</h4>
+                                <h4>@lorem1</h4>
+                            </div>
+                        </div>
                         <p>Lorem ipsum dolor sit amet conse ctetur, adipisicing elit. Deserunt quia dolore quasi? Eligendi, <b>error</b> vel autem repellat voluptas <i>illum</i> quidem?
                         </p>
                     </div>
@@ -140,15 +148,25 @@
     <footer>
 
          <!--Footer: socials, email sub, others-->
-
-        <div class="social"></div>
-            <a href="https://www.facebook.com/" target="blank" class="facebook-link"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.youtube.com/" target="blank" class="youtube-link"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.twitch.tv/" target="blank" class="twitch-link"><i class="fab fa-twitch"></i></a>
-        </div>
-        <div class="alt-search">
-            <input class="search" type="text" placeholder="Search">
-            <button class="sml-btn" type="submit"><i class="fa fa-search"></i></button>
+        <div class="footer-grid">
+            <ul class="footer-list">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Jobs</a></li>
+                <li><a href="">Privacy Policy</a></li>
+            </ul>
+            <div class="footer-grid-bottom">
+                <div class="social">
+                    <h5>Follow</h5>
+                    <a href="https://www.facebook.com/" target="blank" class="facebook-link"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/" target="blank" class="youtube-link"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.twitch.tv/" target="blank" class="twitch-link"><i class="fab fa-twitch"></i></a>
+                </div>
+                <div class="alt-search">
+                    <input class="search" type="text" placeholder="Search">
+                    <button class="sml-btn" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
         </div>
         <p>Blog By Bence</p>
     </footer>

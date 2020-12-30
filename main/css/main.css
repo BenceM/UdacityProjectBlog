@@ -150,20 +150,30 @@ h2 span{
 }
 
 .flex-container{
+    border: 2px solid var(--small-border-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0.7em;
 }
 
 .flex-container p{
     text-align:start;
 }
 
+.subflex-container{
+    display:flex;
+    flex-direction: row;
+}
+
 .author-img{
-    width: 70%;
+    width: 40%;
     display: block;
     border-radius: 60%;
+}
+.headers{
+    padding-left: 1em;
 }
 
 .sign-up{
@@ -183,9 +193,35 @@ h2 span{
 }
     /*------Footer------*/
 footer{
-    margin:1em 0;
+    margin:1em 0 0 1em;
     padding: 0.5em 2em;
     border-top: 2px solid rgb(196, 191, 191);
+}
+.footer-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.footer-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-list li{
+    padding: 0 1rem 1rem 1rem;
+    font-size: smaller;
+}
+
+.footer-grid-bottom{
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    gap: 2em;
+}
+footer p{
+    padding: 0;
+    text-align: center;
 }
 
 .facebook-link:hover{
@@ -227,5 +263,34 @@ footer{
         margin-bottom: 0.5em;
         background-color: #fff;
         padding: 0 1em 0 1em;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+
+    .flex-container p{
+        text-align:start;
+    }
+    .subflex-container{
+        flex-direction: column;
+    }
+    .author-img{
+        width: 65%;
+        display: block;
+        border-radius: 60%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .headers{
+        padding-left: 0;
+    }
+
+    .footer-list li{
+        padding: 0 3rem 0 3rem;
     }
 }

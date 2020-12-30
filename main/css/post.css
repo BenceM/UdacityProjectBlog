@@ -1,11 +1,12 @@
 .post-grid{
     display: grid;
     grid-template-columns:1fr;
-    gap: 1rem;
+    gap: 3rem;
     padding-top: 7em;
 }
 .article-post{
     margin: 1.5em;
+    text-align:justify;
 }
 .article-end{
     width: 100%;
@@ -27,14 +28,19 @@
 .interact-link{
     padding: 0.5em;
 }
+.bio-post{
+    margin: 0 1em 0 1em;
+}
 
 @media (min-width:768px){
     .post-grid{
         grid-template-columns: 3fr 1fr;
-        gap: 3rem;
-        margin: 0 3em 2em 5em;
+        gap: 0.5rem;
+        margin: 0 1em 2em 1em;
     }
+
     .bio-post{
         margin-left: 0.5em;
     }
+
 }
