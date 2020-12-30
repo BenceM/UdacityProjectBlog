@@ -1,0 +1,43 @@
+footer{
+    margin:1em 0 0 1em;
+    padding: 0.5em 2em;
+    border-top: 2px solid rgb(196, 191, 191);
+}
+.footer-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.footer-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-list li{
+    padding: 0 1rem 1rem 1rem;
+    font-size: smaller;
+}
+
+.footer-grid-bottom{
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    gap: 2em;
+}
+footer p{
+    padding: 0;
+    text-align: center;
+}
+
+.facebook-link:hover{
+    color: #385898;
+}
+
+.youtube-link:hover{
+    color:#c00;
+}
+
+.twitch-link:hover{
+    color:#9147ff;
+}
