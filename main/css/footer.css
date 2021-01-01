@@ -3,12 +3,14 @@ footer{
     padding: 0.5em 2em;
     border-top: 2px solid rgb(196, 191, 191);
 }
+
 .footer-grid{
     display: grid;
     grid-template-rows: 1fr 1fr;
     align-items: center;
     justify-content: center;
 }
+
 .footer-list{
     display: flex;
     flex-direction: row;
@@ -19,12 +21,17 @@ footer{
     font-size: smaller;
 }
 
+.footer-list a:hover{
+    color: var(--secondary-color);
+}
+
 .footer-grid-bottom{
     align-self: center;
     justify-self: center;
     display: flex;
     gap: 2em;
 }
+
 footer p{
     padding: 0;
     text-align: center;

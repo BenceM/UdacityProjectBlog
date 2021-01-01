@@ -4,10 +4,12 @@
     gap: 3rem;
     padding-top: 7em;
 }
+
 .article-post{
     margin: 1.5em;
     text-align:justify;
 }
+
 .article-end{
     width: 100%;
     display: grid;
@@ -15,19 +17,27 @@
     border-top: 2px solid var(--small-border-color);
     margin-top: 0.7em;
 }
+
 .grid-left-post{
     align-self: center;
     justify-self: start;
     padding: 0.5em 0 0 0.5em;
 }
+
 .grid-right-post{
     align-self: center;
     justify-self: end;
     padding: 0.5em 0.5em 0 0;
 }
+
 .interact-link{
     padding: 0.5em;
 }
+
+.interact-link:hover{
+    color: var(--secondary-color);
+}
+
 .bio-post{
     margin: 0 1em 0 1em;
 }
@@ -42,5 +52,7 @@
     .bio-post{
         margin-left: 0.5em;
     }
-
+    .article-end{
+        margin: 0.7em 0 2em 0;
+    }
 }
